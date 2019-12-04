@@ -8,6 +8,11 @@ Select the hex characters that you want to view and select `View selected hex...
 
 ![Animated gif showing the function](./viewhex.gif)
 
+## Installing
+
+1. Download the latest vsix file from the [releases](./releases) page.
+1. [Install](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) into Visual Studio Code
+
 ## Release Notes
 
 ### 0.1.0
