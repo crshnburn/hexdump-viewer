@@ -10,6 +10,7 @@
     "typescript.tsc.autoDetect": "off",
     "workbench.colorCustomizations": {
         "activityBar.background": "#dfcbfd",
+        "activityBar.activeBorder": "#f66809",
         "activityBar.foreground": "#15202b",
         "activityBar.inactiveForeground": "#15202b99",
         "activityBarBadge.background": "#f66809",
@@ -20,7 +21,10 @@
         "titleBar.inactiveForeground": "#15202b99",
         "statusBar.background": "#c09afc",
         "statusBarItem.hoverBackground": "#a168fb",
-        "statusBar.foreground": "#15202b"
+        "statusBar.foreground": "#15202b",
+        "activityBar.activeBackground": "#dfcbfd",
+        "statusBar.border": "#c09afc",
+        "titleBar.border": "#c09afc"
     },
     "peacock.color": "#c09afc"
 }

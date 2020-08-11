@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { hexy } from "hexy";
+import { hexyz } from "@crshnburn/hexyz";
 
 export default class HexContentProvider implements vscode.TextDocumentContentProvider {
 
@@ -13,7 +13,7 @@ export default class HexContentProvider implements vscode.TextDocumentContentPro
         let completeStr = byteTokens.reduce((acc, token) => acc.concat(token), "");
         let bytes = completeStr.match(/.{1,2}/g);
         if(bytes !== null){
-            return this.header.concat(hexy(bytes.map(s => parseInt(s, 16)), {format: 'twos', caps: "upper", annotate: "ascii_ebcdic"}));
+            return this.header.concat(hexyz(bytes.map(s => parseInt(s, 16)), {format: 'twos', caps: "upper", annotate: "ascii_ebcdic"}));
         }
         return origBytes;
     }
@@ -24,6 +24,6 @@ export default class HexContentProvider implements vscode.TextDocumentContentPro
 
     public switchEncoding(){
         this.ascii = !this.ascii;
-        this._onDidChange.fire();
+        // this._onDidChange.fire();
     }
 }
