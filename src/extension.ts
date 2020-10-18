@@ -32,13 +32,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let provider = new HexContentProvider();
 	vscode.workspace.registerTextDocumentContentProvider('hexcontent', provider);
-
-	disposable = vscode.commands.registerCommand('hexcontent.switch', (editor) => {
-		provider.switchEncoding();
-	});
-
-	
-
 }
 
 // this method is called when your extension is deactivated

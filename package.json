@@ -27,10 +27,6 @@
 			{
 				"command": "hexcontent.viewHex",
 				"title": "View selected hex..."
-			},
-			{
-				"command": "hexcontent.switch",
-				"title": "Switch ASCII/EBCDIC..."
 			}
 		],
 		"grammars": [
@@ -41,12 +37,6 @@
 			}
 		],
 		"menus": {
-			"editor/title": [
-				{
-					"command": "hexcontent.switch",
-					"when": "editorLangId == hexcontent"
-				}
-			],
 			"commandPalette": [
 				{
 					"command": "hexcontent.viewHex",
